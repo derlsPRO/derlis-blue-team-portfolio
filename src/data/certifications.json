@@ -1,0 +1,22 @@
+[
+  {
+    "status": "Completado",
+    "statusType": "completed",
+    "title": "CCNA 1: Introduction to Networks",
+    "issuer": "Cisco Networking Academy",
+    "year": "2026",
+    "description": "Certificación orientada a fundamentos de redes, modelos OSI y TCP/IP, direccionamiento, switching, routing básico y servicios de red.",
+    "tags": ["Networking", "Cisco", "OSI", "TCP/IP"],
+    "link": "https://www.credly.com/badges/13b16b7e-c741-4746-936c-3e0dc28d9756/public_url"
+  },
+  {
+    "status": "En progreso",
+    "statusType": "progress",
+    "title": "Próximas certificaciones Internacionales Blue Team",
+    "issuer": "Ruta de crecimiento profesional",
+    "year": "2026+",
+    "description": "Plan de avance orientado a fortalecer operaciones defensivas, análisis de incidentes, detección y escalamiento profesional dentro del SOC.",
+    "tags": ["CySA+", "BTL2"],
+    "link": ""
+  }
+]

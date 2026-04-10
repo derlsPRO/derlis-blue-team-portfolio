@@ -1,0 +1,30 @@
+[
+  {
+    "role": "SOC Analyst L1",
+    "company": "CLT",
+    "period": "Actualidad",
+    "description": "Actualmente me desempeño en monitoreo de alertas, análisis inicial, triage, documentación y escalamiento de incidentes dentro de un entorno SOC, utilizando herramientas reales de seguridad.",
+    "bullets": [
+      "Monitoreo y revisión inicial de alertas de seguridad.",
+      "Triage y clasificación de eventos sospechosos.",
+      "Documentación y seguimiento de incidentes.",
+      "Escalamiento según criticidad y contexto del evento.",
+      "Uso de plataformas defensivas para investigación inicial."
+    ],
+    "tags": ["Wazuh", "TheHive", "CrowdStrike", "Nessus", "Check Point", "Lumu"]
+  },
+  {
+    "role": "Soporte Técnico / Infraestructura",
+    "company": "Diviserv",
+    "period": "Experiencia previa",
+    "description": "Antes de enfocarme en ciberseguridad, desarrollé experiencia en soporte técnico, resolución de incidencias, asistencia a usuarios y tareas relacionadas con sistemas, redes y entornos corporativos.",
+    "bullets": [
+      "Resolución de problemas técnicos en equipos y software.",
+      "Soporte a usuarios en entornos reales de trabajo.",
+      "Configuración básica y asistencia en redes y conectividad.",
+      "Documentación de incidencias y atención operativa.",
+      "Fortalecimiento de criterio técnico y troubleshooting."
+    ],
+    "tags": ["Soporte TI", "Troubleshooting", "Windows", "Redes", "Usuarios"]
+  }
+]

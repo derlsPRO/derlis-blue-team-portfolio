@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Mini SOC Open Source (Home Lab)",
+    "description": "Diseño e implementación de un entorno SOC completo utilizando herramientas open source desplegadas mediante Docker Compose para simulación de detección y análisis de incidentes.",
+    "bullets": [
+      "Arquitectura SIEM con Wazuh",
+      "Gestión de casos con IRIS",
+      "Automatización con Shuffle SOAR",
+      "Recolección forense con Velociraptor",
+      "IDS basado en Suricata"
+    ],
+    "tags": ["Wazuh", "IRIS", "Shuffle", "Velociraptor", "Suricata", "Docker"]
+  },
+  {
+    "title": "Arquitectura defensiva doméstica segmentada",
+    "description": "Diseño progresivo de infraestructura de laboratorio orientada a segmentación de red, monitoreo de tráfico y simulación de escenarios defensivos reales.",
+    "bullets": [
+      "Segmentación lógica mediante VLAN",
+      "Router dedicado futuro con OPNsense",
+      "Switch gestionado con soporte SPAN",
+      "Captura de tráfico para análisis"
+    ],
+    "tags": ["Networking", "VLAN", "OPNsense", "SPAN"]
+  },
+  {
+    "title": "Laboratorios prácticos de análisis SOC",
+    "description": "Resolución continua de escenarios de detección e investigación mediante plataformas de entrenamiento técnico orientadas a operaciones defensivas.",
+    "bullets": [
+      "Análisis de correos phishing",
+      "Investigación de eventos sospechosos",
+      "Correlación básica de logs",
+      "Documentación de incidentes simulados"
+    ],
+    "tags": ["SOC", "Blue Team", "Threat Analysis", "Incident Response"]
+  }
+]

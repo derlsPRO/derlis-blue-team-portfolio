@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Monitoreo y SIEM",
+    "items": ["Wazuh", "SIEM", "Correlación de eventos"]
+  },
+  {
+    "title": "Gestión de incidentes",
+    "items": ["TheHive", "Triage", "Documentación"]
+  },
+  {
+    "title": "EDR y análisis de endpoints",
+    "items": ["CrowdStrike", "Investigación inicial", "Detección"]
+  },
+  {
+    "title": "Vulnerabilidades y postura",
+    "items": ["Nessus", "Evaluación", "Análisis básico"]
+  },
+  {
+    "title": "Redes y perímetro",
+    "items": ["Check Point", "F5 BIG-IQ", "APSolute Vision", "Lumu"]
+  },
+  {
+    "title": "Fundamentos que sigo fortaleciendo",
+    "items": ["Networking", "CCNA", "TCP/IP", "Blue Team"]
+  }
+]

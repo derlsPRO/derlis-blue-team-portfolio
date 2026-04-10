@@ -1,17 +1,378 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+import tools from "../data/tools.json";
+import experience from "../data/experience.json";
+import certifications from "../data/certifications.json";
+import projects from "../data/projects.json";
+import roadmap from "../data/roadmap.json";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Derlis Gamarra | SOC Analyst L1 · Blue Team Portfolio"
+  description="Portafolio profesional orientado a Blue Team, operaciones SOC, herramientas defensivas, laboratorios técnicos y evolución profesional en ciberseguridad."
+>
+  <main>
+
+
+
+    <section class="hero">
+      <div class="container">
+        <div class="badge">SOC Analyst · Blue Team · Asunción, Paraguay</div>
+        <h1>Derlis Gamarra</h1>
+        <p>
+          Analista de seguridad con enfoque defensivo, orientado al monitoreo,
+          análisis de alertas, documentación de incidentes y evolución
+          continua dentro del mundo Blue Team.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn-outline">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="badge">01 · Sobre mí</div>
+        <h2 class="section-title">Construyendo una trayectoria sólida en Blue Team</h2>
+        <p class="section-subtitle">
+          Actualmente me desempeño como SOC Analyst L1 y estoy desarrollando una base
+          técnica real en operaciones defensivas, análisis de alertas, documentación
+          de incidentes y crecimiento continuo dentro del mundo de la ciberseguridad.
+        </p>
+
+        <div class="about-grid">
+          <article class="card">
+            <h3>Quién soy hoy</h3>
+            <p>
+              Soy Derlis Gamarra, profesional de ciberseguridad enfocado
+              en Blue Team y operaciones SOC. Mi trabajo está orientado al monitoreo
+              de eventos, análisis inicial de alertas, documentación y escalamiento
+              de incidentes dentro de entornos corporativos.
+            </p>
+            <p>
+              Mi objetivo no es quedarme en una etapa inicial, sino crecer de forma
+              seria y progresiva hacia roles de mayor profundidad técnica como SOC L2,
+              Detection Engineering y áreas defensivas más avanzadas.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Lo que me mueve</h3>
+            <ul class="about-list">
+              <li>Aprendizaje técnico constante</li>
+              <li>Disciplina y mejora continua</li>
+              <li>Construcción de criterio defensivo real</li>
+              <li>Documentar el progreso de forma profesional</li>
+              <li>Convertirme en un perfil sólido dentro del Blue Team</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="about-tags">
+          <span class="tag">SOC Analyst L1</span>
+          <span class="tag">Blue Team</span>
+          <span class="tag">Asunción, Paraguay</span>
+          <span class="tag">Cybersecurity Operations</span>
+          <span class="tag">Evolución Continua</span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="badge">02 · Stack y herramientas</div>
+        <h2 class="section-title">Tecnologías con las que trabajo y sigo fortaleciendo</h2>
+        <p class="section-subtitle">
+          Herramientas y áreas técnicas que forman parte de mi entorno actual de trabajo,
+          estudio y crecimiento dentro de operaciones defensivas y Blue Team.
+        </p>
+
+        <div class="tools-categories">
+          {tools.map((group) => (
+            <article class="card">
+              <h3>{group.title}</h3>
+              <div class="tool-tags">
+                {group.items.map((item) => (
+                  <span class="tag">{item}</span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="badge">03 · Experiencia profesional</div>
+        <h2 class="section-title">Trayectoria y evolución dentro del entorno tecnológico</h2>
+        <p class="section-subtitle">
+          Mi experiencia se ha construido de forma progresiva entre soporte, operaciones
+          técnicas y ciberseguridad, consolidando una base cada vez más sólida dentro
+          del mundo Blue Team.
+        </p>
+
+        <div class="timeline-pro">
+          {experience.map((job) => (
+            <article class="timeline-card">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>{job.role}</h3>
+                    <p class="timeline-company">{job.company}</p>
+                  </div>
+                  <span class="timeline-period">{job.period}</span>
+                </div>
+
+                <p>{job.description}</p>
+
+                <ul class="experience-list">
+                  {job.bullets.map((bullet) => (
+                    <li>{bullet}</li>
+                  ))}
+                </ul>
+
+                <div class="tool-tags">
+                  {job.tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="badge">05 · Labs y proyectos</div>
+
+        <h2 class="section-title">
+          Laboratorios y proyectos técnicos en ciberseguridad
+        </h2>
+
+        <p class="section-subtitle">
+          Desarrollo continuo de un entorno de laboratorio orientado a Security
+          Operations para fortalecer capacidades de detección, análisis y respuesta
+          ante incidentes.
+        </p>
+
+        <div class="projects-grid">
+          {projects.map((project) => (
+            <article class="card project-card">
+              <h3>{project.title}</h3>
+
+              <p>{project.description}</p>
+
+              <ul class="project-list">
+                {project.bullets.map((bullet) => (
+                  <li>{bullet}</li>
+                ))}
+              </ul>
+
+              <div class="tool-tags">
+                {project.tags.map((tag) => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <div class="badge">04 · Certificaciones</div>
+        <h2 class="section-title">Formación y validación de conocimientos</h2>
+        <p class="section-subtitle">
+          Certificaciones y logros académicos que respaldan mi crecimiento técnico
+          dentro de networking, ciberseguridad y operaciones defensivas.
+        </p>
+
+        <div class="cert-grid">
+          {certifications.map((cert) => (
+            <article class="card cert-card">
+              <div class="cert-top">
+                <div>
+                  <span class={`cert-label ${cert.statusType === "progress" ? "cert-label-progress" : ""}`}>
+                    {cert.status}
+                  </span>
+                  <h3>{cert.title}</h3>
+                  <p class="cert-issuer">{cert.issuer}</p>
+                </div>
+                <span class="cert-year">{cert.year}</span>
+              </div>
+
+              <p class="cert-text">{cert.description}</p>
+
+              <div class="tool-tags">
+                {cert.tags.map((tag) => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+
+              {cert.link && (
+                <div class="cert-actions">
+                  <a href={cert.link} class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                    Ver credencial
+                  </a>
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="roadmap" class="section section-alt">
+      <div class="container">
+        <div class="badge">06 · Roadmap profesional</div>
+        <h2 class="section-title">Evolución planificada dentro del Blue Team</h2>
+        <p class="section-subtitle">
+          Mi crecimiento está orientado a construir una base sólida hoy y avanzar de
+          forma progresiva hacia roles de mayor profundidad técnica dentro de
+          operaciones defensivas.
+        </p>
+
+        <div class="roadmap-grid">
+          {roadmap.map((stage) => (
+            <article class="card roadmap-card">
+              <div class="roadmap-top">
+                <h3>{stage.title}</h3>
+                <span
+                  class={`roadmap-status ${
+                    stage.statusType === "current"
+                      ? "roadmap-status-current"
+                      : stage.statusType === "progress"
+                      ? "roadmap-status-progress"
+                      : "roadmap-status-future"
+                  }`}
+                >
+                  {stage.status}
+                </span>
+              </div>
+
+              <p class="roadmap-description">{stage.description}</p>
+
+              <ul class="roadmap-list">
+                {stage.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="badge">06 · Contacto</div>
+        <h2 class="section-title">Hablemos</h2>
+        <p class="section-subtitle">
+          Si querés conectar, proponer una oportunidad o simplemente conversar sobre
+          ciberseguridad, podés escribirme directamente desde aquí.
+        </p>
+
+        <div class="contact-grid">
+          <article class="card">
+            <h3>Canales directos</h3>
+            <p class="contact-text">
+              También podés encontrarme en mis perfiles profesionales y revisar más
+              sobre mi trayectoria, proyectos y evolución dentro del Blue Team.
+            </p>
+
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/derlis-gamarra-a4342427a/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                LinkedIn
+              </a>
+              <a href="https://github.com/derlsPRO" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                GitHub
+              </a>
+            </div>
+
+            <div class="contact-info">
+              <a href="mailto:derlisgamarra21@outlook.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">  
+                <p><strong>Email:</strong> derlisgamarra21@outlook.com</p>
+              </a>
+              <p><strong>Ubicación:</strong> Asunción, Paraguay</p>
+              <p><strong>Enfoque:</strong> Blue Team · SOC · Cybersecurity Operations</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Envíame un mensaje</h3>
+
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/thanks"
+              class="contact-form"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>
+                  No llenar esto:
+                  <input name="bot-field" />
+                </label>
+              </p>
+
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" placeholder="tuemail@correo.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input id="subject" name="subject" type="text" placeholder="Motivo del mensaje" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Escribí tu mensaje aquí"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+</BaseLayout>

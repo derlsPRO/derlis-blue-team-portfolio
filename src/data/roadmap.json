@@ -1,0 +1,50 @@
+[
+  {
+    "title": "SOC Analyst L1",
+    "status": "Puesto Actual",
+    "statusType": "current",
+    "description": "Fortalecimiento de base operativa en monitoreo, triage, documentación e investigación inicial de incidentes.",
+    "items": [
+      "Monitoreo de alertas",
+      "Triage inicial",
+      "Documentación de incidentes",
+      "Uso operativo de herramientas defensivas"
+    ]
+  },
+  {
+    "title": "SOC Analyst L2",
+    "status": "Escalando",
+    "statusType": "progress",
+    "description": "Crecimiento hacia una capacidad más profunda de análisis, correlación, investigación y respuesta técnica.",
+    "items": [
+      "Investigación más profunda de eventos",
+      "Análisis de contexto técnico",
+      "Correlación avanzada",
+      "Mayor autonomía operativa"
+    ]
+  },
+  {
+    "title": "Detection Engineering",
+    "status": "Objetivo próximo",
+    "statusType": "future",
+    "description": "Construcción de capacidades orientadas a reglas de detección, tuning y mejora continua de visibilidad defensiva.",
+    "items": [
+      "Diseño de detecciones",
+      "Tuning de alertas",
+      "Lógica defensiva más avanzada",
+      "Mejora continua del stack"
+    ]
+  },
+  {
+    "title": "DFIR / Threat Hunt",
+    "status": "Visión a largo plazo",
+    "statusType": "future",
+    "description": "Enfoque futuro en respuesta a incidentes, análisis forense y madurez técnica dentro de Blue Team.",
+    "items": [
+      "Incident Response",
+      "Digital Forensics",
+      "Threat Analysis",
+      "Especialización técnica"
+    ]
+  }
+]
